@@ -1,0 +1,11 @@
+# Development Tasks
+
+default:
+  - 'sass'
+
+prepare:
+  - 'sass'
+  - 'autoprefixer'
+  - 'watch'
+
+# Production Tasks

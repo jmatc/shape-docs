@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-  {% include nav-main.html %}
-  <body>
+<html lang="en" class="tall">
+  {% include head.html %}
+  <body class="tall">
     {% include header.html %}
-    <section id="main" class="container">
-      <div class="row">
-        <div class="span3">
+    <div class="docs-main-wrapper docs-contain tall">
+      <section class="left tall">
         {% include nav-tertiary.html %}
-        </div>
-        <div class="span9">{{content}}</div>
-      </div>
-    </section>
+      </section>
+      <section class="right tall" role="main">
+        {{content}}
+      </section>
+    </div>
     {% include footer.html %}
   </body>
 </html>

@@ -1,0 +1,59 @@
+// Shape Docs Helpers
+
+.a-left {
+  text-align: left !important;
+}
+
+.a-right {
+  text-align: left !important;
+}
+
+.a-center {
+  text-align: center !important;
+}
+
+.centering {
+  margin: 0 auto;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+// Phantom helpers
+//  Usage: @extend %clearfix;
+%clearfix {
+  &:before,
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+//  Usage: @extend %hide;
+%hide {
+  position: absolute !important;
+  left: -9999em !important;
+  top: -9999em !important;
+}
+
+.docs-contain {
+  @extend %clearfix;
+
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 80%;
+}
+
+.docs-separator {
+  border-bottom: 1px dashed #bbb;
+  display: block;
+  height: 1px;
+  margin: 10px 0;
+  width: 100%;
+}
