@@ -35,6 +35,14 @@
   }
 }
 
+%content {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
 //  Usage: @extend %hide;
 %hide {
   position: absolute !important;

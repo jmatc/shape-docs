@@ -1,6 +1,7 @@
 @import 'helpers.scss',
         'variables.scss',
-        'functions.scss';
+        'functions.scss',
+        'typography.scss';
 
 // Discover a better way to handle 100% height for elements (100% left hand navigation)
 .tall {
@@ -43,10 +44,16 @@ a {
   section {
     &.left {
       border-right: 1px solid #ddd;
-      width: 20%; // temp
+      max-width: 221px;
+      position: fixed;
+      width: 20%;
     }
     &.right {
       width: 80%; // temp
+    }
+    &[role="main"] {
+      @include box-sizing(border-box);
+      padding: 0 50px 20px;
     }
   }
 
@@ -55,9 +62,7 @@ a {
 // Header/Masthead
 .docs-navbar {
   @extend %clearfix;
-  background: #000;
-  // background: rgba(0,0,0,.85);
-  background-color: #00ff96;
+  background: rgba(0,0,0,.85);
   border-bottom: 1px solid #000;
   position: fixed;
   width: 100%;
@@ -152,20 +157,34 @@ a {
 
     &:hover {
       background-color: $docs-secondary-link-color;
+
+      &:before {
+        @extend %content;
+        left: 0;
+        width: 3px;
+        background-color: darken($docs-secondary-link-color, 5%);
+      }
     }
 
     &.active {
       background-color: #33a5c8;
       color: #fff;
+      cursor: default;
+
+      &:before,
+      &:after {
+        @extend %content;
+      }
+
+      &:before {
+        left: 0;
+        width: 3px;
+        background-color: darken(#33a5c8, 5%);
+      }
 
       // effect to cover blue highlight and grey border
       &:after {
         background-color: #33a5c8;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        height: 100%;
         right: -1px;
         width: 1px;
       }
