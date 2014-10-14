@@ -49,7 +49,7 @@ a {
       width: 20%;
     }
     &.right {
-      width: 80%; // temp
+      width: 80%;
     }
     &[role="main"] {
       @include box-sizing(border-box);
@@ -62,8 +62,7 @@ a {
 // Header/Masthead
 .docs-navbar {
   @extend %clearfix;
-  background: rgba(0,0,0,.85);
-  border-bottom: 1px solid #000;
+  background: rgba(247, 247, 247, 0.925);
   position: fixed;
   width: 100%;
 
@@ -85,15 +84,15 @@ a {
     width: 240px;
 
     a {
-      @include hi-res('../images/', 'docs-logo', 'png', 109px, 36px, 0, 0, transparent);
+      @include hi-res('../images/', 'docs-logo', 'png', 43px, 43px, 0, 0, transparent);
 
       background-repeat: no-repeat;
       color: $docs-secondary-link-color;
       display: block;
       float: left;
-      height: 36px;
+      height: 43px;
       margin-right: 12px;
-      width: 109px;
+      width: 43px;
     }
 
     i {
@@ -157,34 +156,21 @@ a {
 
     &:hover {
       background-color: $docs-secondary-link-color;
-
-      &:before {
-        @extend %content;
-        left: 0;
-        width: 3px;
-        background-color: darken($docs-secondary-link-color, 5%);
-      }
+      color: darken($docs-primary-link-color, 10%);
     }
 
     &.active {
-      background-color: #33a5c8;
+      background-color: #4c4c4c;
       color: #fff;
       cursor: default;
 
-      &:before,
       &:after {
         @extend %content;
-      }
-
-      &:before {
-        left: 0;
-        width: 3px;
-        background-color: darken(#33a5c8, 5%);
       }
 
       // effect to cover blue highlight and grey border
       &:after {
-        background-color: #33a5c8;
+        background-color: #4c4c4c;
         right: -1px;
         width: 1px;
       }

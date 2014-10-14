@@ -21,7 +21,7 @@
   content: "";
   display: table; }
 
-.docs-tertiary-nav a:hover:before, .docs-tertiary-nav a.active:before, .docs-tertiary-nav a.active:after {
+.docs-tertiary-nav a.active:after {
   content: "";
   display: block;
   position: absolute;
@@ -79,8 +79,7 @@ a {
   padding: 0 50px 20px; }
 
 .docs-navbar {
-  background: rgba(0, 0, 0, 0.85);
-  border-bottom: 1px solid #000;
+  background: rgba(247, 247, 247, 0.925);
   position: fixed;
   width: 100%; }
   @media screen and (min-width: 80px) {
@@ -102,13 +101,13 @@ a {
       color: #ebebeb;
       display: block;
       float: left;
-      height: 36px;
+      height: 43px;
       margin-right: 12px;
-      width: 109px; }
+      width: 43px; }
       @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
         .docs-navbar .logo a {
           background: url("../images/docs-logo@2x.png") 0 0 transparent;
-          background-size: 109px 36px; } }
+          background-size: 43px 43px; } }
     .docs-navbar .logo i {
       color: #eee;
       font-size: 12px;
@@ -145,21 +144,14 @@ a {
   position: relative;
   text-decoration: none; }
   .docs-tertiary-nav a:hover {
-    background-color: #ebebeb; }
-    .docs-tertiary-nav a:hover:before {
-      left: 0;
-      width: 3px;
-      background-color: #dedede; }
+    background-color: #ebebeb;
+    color: gray; }
   .docs-tertiary-nav a.active {
-    background-color: #33a5c8;
+    background-color: #4c4c4c;
     color: #fff;
     cursor: default; }
-    .docs-tertiary-nav a.active:before {
-      left: 0;
-      width: 3px;
-      background-color: #2e94b4; }
     .docs-tertiary-nav a.active:after {
-      background-color: #33a5c8;
+      background-color: #4c4c4c;
       right: -1px;
       width: 1px; }
 .docs-tertiary-nav .doc-nav-header {
