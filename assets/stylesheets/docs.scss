@@ -157,6 +157,14 @@ a {
     &:hover {
       background-color: $docs-secondary-link-color;
       color: darken($docs-primary-link-color, 10%);
+
+      // effect to cover blue highlight and grey border
+      &:after {
+        @extend %content;
+        background-color: $docs-secondary-link-color;
+        right: -1px;
+        width: 1px;
+      }
     }
 
     &.active {
@@ -164,12 +172,9 @@ a {
       color: #fff;
       cursor: default;
 
-      &:after {
-        @extend %content;
-      }
-
       // effect to cover blue highlight and grey border
       &:after {
+        @extend %content;
         background-color: #4c4c4c;
         right: -1px;
         width: 1px;
@@ -187,8 +192,5 @@ a {
     &:first-child {
       margin-top: 0;
     }
-
   }
 }
-
-

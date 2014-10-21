@@ -2,6 +2,7 @@
 
 default:
   - 'sass'
+  - 'uglify'
 
 prepare:
   - 'sass'

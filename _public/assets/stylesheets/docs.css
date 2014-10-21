@@ -21,7 +21,7 @@
   content: "";
   display: table; }
 
-.docs-tertiary-nav a.active:after {
+.docs-tertiary-nav a:hover:after, .docs-tertiary-nav a.active:after {
   content: "";
   display: block;
   position: absolute;
@@ -146,6 +146,10 @@ a {
   .docs-tertiary-nav a:hover {
     background-color: #ebebeb;
     color: gray; }
+    .docs-tertiary-nav a:hover:after {
+      background-color: #ebebeb;
+      right: -1px;
+      width: 1px; }
   .docs-tertiary-nav a.active {
     background-color: #4c4c4c;
     color: #fff;

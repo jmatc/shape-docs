@@ -1,0 +1,25 @@
+{
+  "name": "shape",
+  "main": [
+    "assets/stylesheets/shape.css",
+    "assets/javascripts/shape.js"
+  ],
+  "dependencies": {
+    "fastclick": ">=0.6.11",
+    "jquery": ">= 2.1.0",
+    "jquery-placeholder": "~2.0.7",
+    "modernizr": ">= 2.7.2"
+  },
+  "private": true,
+  "homepage": "https://github.com/jmatc/shape",
+  "_release": "425b9a2e62",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "425b9a2e62c5ae1b2c15561d0efa9fa4a5ac469b"
+  },
+  "_source": "git://github.com/jmatc/shape.git",
+  "_target": "*",
+  "_originalSource": "shape",
+  "_direct": true
+}
