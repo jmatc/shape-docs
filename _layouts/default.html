@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" class="tall">
   {% include head.html %}
-  <body class="tall">
+  <body>
     {% include header.html %}
-    <div class="docs-main-wrapper docs-contain tall">
-      <section class="left tall">
-        {% include nav-tertiary.html %}
-      </section>
+    <div id="wrapper">
+      {% include nav-main.html %}
       <section class="right tall" role="main">
         {{content}}
       </section>
